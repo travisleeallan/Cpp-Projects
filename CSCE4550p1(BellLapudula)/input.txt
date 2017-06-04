@@ -1,0 +1,9 @@
+write adam aobj 56
+read adam jobj
+write adam aobj 40 80
+read adam aobj 50
+write sara sobj 10
+read tim sobj
+write kristy jobj 40
+write liz kobj 20
+read sara tobj

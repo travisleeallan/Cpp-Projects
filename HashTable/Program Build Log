@@ -1,0 +1,3136 @@
+Last login: Tue Nov 11 16:01:26 on ttys000
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+3110pg2.cpp:20:16: error: expected expression
+    Hash Table[TABLE_SIZE];
+               ^
+3110pg2.cpp:10:20: note: expanded from macro 'TABLE_SIZE'
+#define TABLE_SIZE = 17;
+                   ^
+3110pg2.cpp:20:26: error: expected expression
+    Hash Table[TABLE_SIZE];
+                         ^
+3110pg2.cpp:39:26: error: expected expression
+            for (i=0; i<=TABLE_SIZE; i++) {
+                         ^
+3110pg2.cpp:10:20: note: expanded from macro 'TABLE_SIZE'
+#define TABLE_SIZE = 17;
+                   ^
+3110pg2.cpp:39:36: error: expected expression
+            for (i=0; i<=TABLE_SIZE; i++) {
+                                   ^
+3110pg2.cpp:39:36: error: expected ')'
+3110pg2.cpp:39:17: note: to match this '('
+            for (i=0; i<=TABLE_SIZE; i++) {
+                ^
+3110pg2.cpp:39:41: error: expected ';' after expression
+            for (i=0; i<=TABLE_SIZE; i++) {
+                                        ^
+                                        ;
+3110pg2.cpp:39:41: error: expected expression
+7 errors generated.
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+3110pg2.cpp:11:1: error: C++ requires a type specifier for all declarations
+TABLE_SIZE = 17;
+^~~~~~~~~~
+1 error generated.
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+3110pg2.cpp:21:15: error: variable length array of non-POD element type 'Hash'
+    Hash Table[TABLE_SIZE];
+              ^
+1 error generated.
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+3110pg2.cpp:21:16: error: expected ']'
+    Hash Table[TABLE_SIZE];
+               ^
+3110pg2.cpp:11:22: note: expanded from macro 'TABLE_SIZE'
+#define TABLE_SIZE 17;
+                     ^
+3110pg2.cpp:21:15: note: to match this '['
+    Hash Table[TABLE_SIZE];
+              ^
+3110pg2.cpp:21:26: error: expected expression
+    Hash Table[TABLE_SIZE];
+                         ^
+3110pg2.cpp:41:38: error: expected expression
+            for (i=0; i <= TABLE_SIZE; i++) {
+                                     ^
+3110pg2.cpp:41:38: error: expected ')'
+3110pg2.cpp:41:17: note: to match this '('
+            for (i=0; i <= TABLE_SIZE; i++) {
+                ^
+3110pg2.cpp:41:43: error: expected ';' after expression
+            for (i=0; i <= TABLE_SIZE; i++) {
+                                          ^
+                                          ;
+3110pg2.cpp:41:43: error: expected expression
+6 errors generated.
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+3110pg2.cpp:42:47: error: 'item' is a private member of 'Hash'
+                cout << i << "  " << Table[i].item << "  " << Table[i].h...
+                                              ^
+3110pg2.cpp:14:9: note: implicitly declared private here
+    int item, hop;
+        ^
+3110pg2.cpp:42:72: error: 'hop' is a private member of 'Hash'
+  ...cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                                                            ^
+3110pg2.cpp:14:15: note: implicitly declared private here
+    int item, hop;
+              ^
+2 errors generated.
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+3110pg2.cpp:14:11: error: expected ':'
+    public
+          ^
+          :
+1 error generated.
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+Travis-Macbook:~ travisallan$ ./a.out
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Value
+5. Exit Program
+Enter Operation to perform:4
+
+0  0  0
+1  0  0
+2  0  0
+3  0  0
+4  574906388  285227767
+5  1449155928  32767
+6  1642795632  32767
+7  17  0
+8  157261928  1
+9  1  0
+10  1449155712  32767
+11  1642648187  32767
+12  1449155736  32767
+13  1449155736  32767
+14  0  1
+15  1449155760  32767
+16  157261824  1
+17  4  14
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Value
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+Travis-Macbook:~ travisallan$ ./a.out
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+
+0  0  0
+1  0  0
+2  0  0
+3  0  0
+4  0  0
+5  0  0
+6  0  0
+7  0  0
+8  -187677658  2030108433
+9  1467268440  32767
+10  1677558384  32767
+11  17  0
+12  139149416  1
+13  1  0
+14  1467268224  32767
+15  1677410939  32767
+16  1467268248  32767
+17  4  32767
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5       
+
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+3110pg2.cpp:25:14: error: member reference base type 'Hash [17]' is not a
+      structure or union
+        Table.item = -1;
+        ~~~~~^~~~~
+3110pg2.cpp:26:14: error: member reference base type 'Hash [17]' is not a
+      structure or union
+        Table.hop = 0000;
+        ~~~~~^~~~
+2 errors generated.
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+Travis-Macbook:~ travisallan$ ./a.out
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0
+1  -1  0
+2  -1  0
+3  -1  0
+4  -1  0
+5  -1  0
+6  -1  0
+7  -1  0
+8  -1  0
+9  -1  0
+10  -1  0
+11  -1  0
+12  -1  0
+13  -1  0
+14  -1  0
+15  -1  0
+16  -1  0
+17  4  0
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5         
+
+Travis-Macbook:~ travisallan$ g++ 3110pg2.cpp
+Travis-Macbook:~ travisallan$ ./a.out
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0
+1  -1  0
+2  -1  0
+3  -1  0
+4  -1  0
+5  -1  0
+6  -1  0
+7  -1  0
+8  -1  0
+9  -1  0
+10  -1  0
+11  -1  0
+12  -1  0
+13  -1  0
+14  -1  0
+15  -1  0
+16  -1  0
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0
+1  -1  0
+2  -1  0
+3  -1  0
+4  -1  0
+5  -1  0
+6  -1  0
+7  -1  0
+8  -1  0
+9  -1  0
+10  -1  0
+11  -1  0
+12  -1  0
+13  -1  0
+14  -1  0
+15  -1  0
+16  -1  0
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:~ travisallan$ mkdir 3110pg2
+Travis-Macbook:~ travisallan$ cd mkdir 3110pg2
+-bash: cd: mkdir: No such file or directory
+Travis-Macbook:~ travisallan$ cd 3110pg2
+Travis-Macbook:3110pg2 travisallan$ cp ~travisallan/3110pg2
+usage: cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file target_file
+       cp [-R [-H | -L | -P]] [-fi | -n] [-apvX] source_file ... target_directory
+Travis-Macbook:3110pg2 travisallan$ ls
+Travis-Macbook:3110pg2 travisallan$ pico HashHeader.h
+Travis-Macbook:3110pg2 travisallan$ pico main.cpp
+Travis-Macbook:3110pg2 travisallan$ pico HashHeader.cpp
+Travis-Macbook:3110pg2 travisallan$ ls
+HashHeader.cpp	HashHeader.h	main.cpp
+Travis-Macbook:3110pg2 travisallan$ g++ main.cpp HashHeader.cpp
+main.cpp:19:18: error: 'item' is a private member of 'Hash'
+        Table[i].item = -1;
+                 ^
+./HashHeader.h:11:9: note: implicitly declared private here
+    int item, hop;
+        ^
+main.cpp:20:18: error: 'hop' is a private member of 'Hash'
+        Table[i].hop = 0000;
+                 ^
+./HashHeader.h:11:15: note: implicitly declared private here
+    int item, hop;
+              ^
+main.cpp:40:47: error: 'item' is a private member of 'Hash'
+                cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                                              ^
+./HashHeader.h:11:9: note: implicitly declared private here
+    int item, hop;
+        ^
+main.cpp:40:72: error: 'hop' is a private member of 'Hash'
+                cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                                                                       ^
+./HashHeader.h:11:15: note: implicitly declared private here
+    int item, hop;
+              ^
+4 errors generated.
+Travis-Macbook:3110pg2 travisallan$ g++ main.cpp HashHeader.cpp
+main.cpp:19:18: error: 'Initialize' is a private member of 'Hash'
+        Table[i].Initialize();
+                 ^
+./HashHeader.h:13:10: note: implicitly declared private here
+    void Initialize();
+         ^
+main.cpp:39:26: error: 'PrintVal' is a private member of 'Hash'
+                Table[i].PrintVal(i);
+                         ^
+./HashHeader.h:17:9: note: implicitly declared private here
+    int PrintVal(int tempVal);
+        ^
+2 errors generated.
+HashHeader.cpp:26:13: error: use of undeclared identifier 'i'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+            ^
+HashHeader.cpp:26:26: error: use of undeclared identifier 'Table'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                         ^
+HashHeader.cpp:26:32: error: use of undeclared identifier 'i'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                               ^
+HashHeader.cpp:26:51: error: use of undeclared identifier 'Table'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                                                  ^
+HashHeader.cpp:26:57: error: use of undeclared identifier 'i'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                                                        ^
+5 errors generated.
+Travis-Macbook:3110pg2 travisallan$ clear
+
+Travis-Macbook:3110pg2 travisallan$ g++ main.cpp HashHeader.cpp
+main.cpp:19:18: error: 'Initialize' is a private member of 'Hash'
+        Table[i].Initialize();
+                 ^
+./HashHeader.h:13:10: note: implicitly declared private here
+    void Initialize();
+         ^
+main.cpp:39:26: error: 'PrintVal' is a private member of 'Hash'
+                Table[i].PrintVal(i);
+                         ^
+./HashHeader.h:17:9: note: implicitly declared private here
+    int PrintVal(int tempVal);
+        ^
+2 errors generated.
+HashHeader.cpp:26:13: error: use of undeclared identifier 'i'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+            ^
+HashHeader.cpp:26:26: error: use of undeclared identifier 'Table'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                         ^
+HashHeader.cpp:26:32: error: use of undeclared identifier 'i'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                               ^
+HashHeader.cpp:26:51: error: use of undeclared identifier 'Table'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                                                  ^
+HashHeader.cpp:26:57: error: use of undeclared identifier 'i'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                                                        ^
+5 errors generated.
+Travis-Macbook:3110pg2 travisallan$ g++ main.cpp HashHeader.cpp
+HashHeader.cpp:26:13: error: use of undeclared identifier 'i'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+            ^
+HashHeader.cpp:26:26: error: use of undeclared identifier 'Table'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                         ^
+HashHeader.cpp:26:32: error: use of undeclared identifier 'i'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                               ^
+HashHeader.cpp:26:51: error: use of undeclared identifier 'Table'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                                                  ^
+HashHeader.cpp:26:57: error: use of undeclared identifier 'i'
+    cout << i << "  " << Table[i].item << "  " << Table[i].hop << endl;
+                                                        ^
+5 errors generated.
+Travis-Macbook:3110pg2 travisallan$ g++ main.cpp HashHeader.cpp
+HashHeader.cpp:26:32: error: use of undeclared identifier 'Table'
+    cout << tempVal << "  " << Table[tempVal].item << "  " << Table[tempVal].hop << endl;
+                               ^
+HashHeader.cpp:26:63: error: use of undeclared identifier 'Table'
+    cout << tempVal << "  " << Table[tempVal].item << "  " << Table[tempVal].hop << endl;
+                                                              ^
+2 errors generated.
+Travis-Macbook:3110pg2 travisallan$ g++ main.cpp HashHeader.cpp
+Travis-Macbook:3110pg2 travisallan$ ./a.out
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0
+1  -1  0
+2  -1  0
+3  -1  0
+4  -1  0
+5  -1  0
+6  -1  0
+7  -1  0
+8  -1  0
+9  -1  0
+10  -1  0
+11  -1  0
+12  -1  0
+13  -1  0
+14  -1  0
+15  -1  0
+16  -1  0
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ pico HashBash.sh
+Travis-Macbook:3110pg2 travisallan$ source HashBash.h
+-bash: HashBash.h: No such file or directory
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+-bash: /Applications: is a directory
+-bash: *Name:: command not found
+-bash: *Date:: command not found
+-bash: *Course:: command not found
+-bash: *Assignment:: command not found
+-bash: */: No such file or directory
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ pico HashBash.sh
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0
+1  -1  0
+2  -1  0
+3  -1  0
+4  -1  0
+5  -1  0
+6  -1  0
+7  -1  0
+8  -1  0
+9  -1  0
+10  -1  0
+11  -1  0
+12  -1  0
+13  -1  0
+14  -1  0
+15  -1  0
+16  -1  0
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0
+1  -1  0
+2  -1  0
+3  -1  0
+4  -1  0
+5  -1  0
+6  -1  0
+7  -1  0
+8  -1  0
+9  -1  0
+10  -1  0
+11  -1  0
+12  -1  0
+13  -1  0
+14  -1  0
+15  -1  0
+16  -1  0
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+^C
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+^C
+Travis-Macbook:3110pg2 travisallan$ g++ main.cpp HashHeader.cpp
+Travis-Macbook:3110pg2 travisallan$ ./a.out
+5
+
+5
+4
+34
+3
+^C
+Travis-Macbook:3110pg2 travisallan$ g++ main.cpp HashHeader.cpp
+HashHeader.cpp:12:11: error: return type of out-of-line definition of 'Hash::Initialize' differs from
+      that in the declaration
+int Hash::Initialize(){
+          ^
+./HashHeader.h:14:10: note: previous declaration is here
+    void Initialize();
+         ^
+1 error generated.
+Travis-Macbook:3110pg2 travisallan$ g++ main.cpp HashHeader.cpp
+Travis-Macbook:3110pg2 travisallan$ ./a.out
+^C
+Travis-Macbook:3110pg2 travisallan$ g++ HashHeader.cpp main.cpp
+Travis-Macbook:3110pg2 travisallan$ ./a.out
+^C
+Travis-Macbook:3110pg2 travisallan$ g++ HashHeader.cpp main.cpp
+Travis-Macbook:3110pg2 travisallan$ ./a.out
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ g++ HashHeader.cpp main.cpp
+Travis-Macbook:3110pg2 travisallan$ ./a.out
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  -1  0000
+3  -1  0000
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5   
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  -1  0000
+3  -1  0000
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5   
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+2
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  0000
+3  -1  0000
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 36
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  0000
+3  -1  0000
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 34
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  34  0000
+1  -1  0000
+2  19  0000
+3  -1  0000
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 3
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 1
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  34  0000
+1  1  0000
+2  19  0000
+3  3  0000
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+Enter positive integer value to insert into Hopscotch Hash Table: 3
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+In file included from main.cpp:9:
+./HashHeader.h:15:32: error: unknown type name 'hop'
+    int InsertVal(int tempVal, hop);
+                               ^
+1 error generated.
+In file included from HashHeader.cpp:9:
+./HashHeader.h:15:32: error: unknown type name 'hop'
+    int InsertVal(int tempVal, hop);
+                               ^
+HashHeader.cpp:19:34: error: unknown type name 'hop'
+int Hash::InsertVal(int tempVal, hop){
+                                 ^
+HashHeader.cpp:20:9: error: use of undeclared identifier 'hop'
+    if (hop == 'a') hop4 = 1;
+        ^
+HashHeader.cpp:21:14: error: use of undeclared identifier 'hop'
+    else if (hop == 'b') hop3 = 1;
+             ^
+HashHeader.cpp:22:14: error: use of undeclared identifier 'hop'
+    else if (hop == 'c') hop2 = 1;
+             ^
+HashHeader.cpp:23:14: error: use of undeclared identifier 'hop'
+    else if (hop == 'd') hop1 = 1;
+             ^
+6 errors generated.
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5   
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:36
+
+Error1: Action is not supported
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  1000
+3  -1  0000
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 36
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  1000
+3  36  0100
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 20
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  1000
+3  36  1100
+4  20  0100
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+HashHeader.cpp:24:1: warning: control reaches end of non-void function [-Wreturn-type]
+}
+^
+1 warning generated.
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  1000
+3  -1  0000
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 36
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  1100
+3  36  0000
+4  -1  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1   
+
+Enter positive integer value to insert into Hopscotch Hash Table: 20
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  1100
+3  36  0100
+4  20  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+Enter positive integer value to delete from Hopscotch Hash Table: 3
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  1100
+3  36  0100
+4  20  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+Enter positive integer value to search for in Hopscotch Hash Table: 4
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0  -1  0000
+1  -1  0000
+2  19  1100
+3  36  0100
+4  20  0000
+5  -1  0000
+6  -1  0000
+7  -1  0000
+8  -1  0000
+9  -1  0000
+10  -1  0000
+11  -1  0000
+12  -1  0000
+13  -1  0000
+14  -1  0000
+15  -1  0000
+16  -1  0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0    0000
+1    0000
+2    0000
+3    0000
+4    0000
+5    0000
+6    0000
+7    0000
+8    0000
+9    0000
+10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0    0000
+1    0000
+2  19  1000
+3    0000
+4    0000
+5    0000
+6    0000
+7    0000
+8    0000
+9    0000
+10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 36
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0    0000
+1    0000
+2  19  1100
+3  36  0000
+4    0000
+5    0000
+6    0000
+7    0000
+8    0000
+9    0000
+10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 20
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0    0000
+1    0000
+2  19  1100
+3  36  0100
+4  20  0000
+5    0000
+6    0000
+7    0000
+8    0000
+9    0000
+10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0    0000
+1    0000
+2    0000
+3    0000
+4    0000
+5    0000
+6    0000
+7    0000
+8    0000
+9    0000
+10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5   
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0    0000
+ 1    0000
+ 2    0000
+ 3    0000
+ 4    0000
+ 5    0000
+ 6    0000
+ 7    0000
+ 8    0000
+ 9    0000
+ 10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0    0000
+ 1    0000
+ 2    0000
+ 3    0000
+ 4    0000
+ 5    0000
+ 6    0000
+ 7    0000
+ 8    0000
+ 9    0000
+ 10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+0    0000
+ 1    0000
+ 2    0000
+ 3    0000
+ 4    0000
+ 5    0000
+ 6    0000
+ 7    0000
+ 8    0000
+ 9    0000
+10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+ 0    0000
+ 1    0000
+ 2    0000
+ 3    0000
+ 4    0000
+ 5    0000
+ 6    0000
+ 7    0000
+ 8    0000
+ 9    0000
+10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+ 0    0000
+ 1    0000
+ 2  19  1000
+ 3    0000
+ 4    0000
+ 5    0000
+ 6    0000
+ 7    0000
+ 8    0000
+ 9    0000
+10    0000
+11    0000
+12    0000
+13    0000
+14    0000
+15    0000
+16    0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5   
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+ 0              0000
+ 1              0000
+ 2              0000
+ 3              0000
+ 4              0000
+ 5              0000
+ 6              0000
+ 7              0000
+ 8              0000
+ 9              0000
+10              0000
+11              0000
+12              0000
+13              0000
+14              0000
+15              0000
+16              0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5   
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
+ 0              0000
+ 1              0000
+ 2              0000
+ 3              0000
+ 4              0000
+ 5              0000
+ 6              0000
+ 7              0000
+ 8              0000
+ 9              0000
+10              0000
+11              0000
+12              0000
+13              0000
+14              0000
+15              0000
+16              0000
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5   
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+| 0              0000
+| 1              0000
+| 2              0000
+| 3              0000
+| 4              0000
+| 5              0000
+| 6              0000
+| 7              0000
+| 8              0000
+| 9              0000
+|10              0000
+|11              0000
+|12              0000
+|13              0000
+|14              0000
+|15              0000
+|16              0000
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0  |      | 0000
+|  1  |      | 0000
+|  2  |      | 0000
+|  3  |      | 0000
+|  4  |      | 0000
+|  5  |      | 0000
+|  6  |      | 0000
+|  7  |      | 0000
+|  8  |      | 0000
+|  9  |      | 0000
+| 10  |      | 0000
+| 11  |      | 0000
+| 12  |      | 0000
+| 13  |      | 0000
+| 14  |      | 0000
+| 15  |      | 0000
+| 16  |      | 0000
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0  |      | 0000|
+|  1  |      | 0000|
+|  2  |      | 0000|
+|  3  |      | 0000|
+|  4  |      | 0000|
+|  5  |      | 0000|
+|  6  |      | 0000|
+|  7  |      | 0000|
+|  8  |      | 0000|
+|  9  |      | 0000|
+| 10  |      | 0000|
+| 11  |      | 0000|
+| 12  |      | 0000|
+| 13  |      | 0000|
+| 14  |      | 0000|
+| 15  |      | 0000|
+| 16  |      | 0000|
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |      | 0000 |
+|  3 |      | 0000 |
+|  4 |      | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1000 |
+|  3 |      | 0000 |
+|  4 |      | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 36
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0000 |
+|  4 |      | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 20
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 55
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0100 |
+|  4 |  20  | 0100 |
+|  5 |  55  | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 34
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1 2
+
+Enter positive integer value to insert into Hopscotch Hash Table: HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1 99
+
+Enter positive integer value to insert into Hopscotch Hash Table: HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1 88
+
+Enter positive integer value to insert into Hopscotch Hash Table: HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |  34  | 1000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0110 |
+|  4 |  20  | 0111 |
+|  5 |  55  | 0001 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |  99  | 1000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 45
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |  34  | 1000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0110 |
+|  4 |  20  | 0111 |
+|  5 |  55  | 0001 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |  45  | 1000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |  99  | 1000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 33
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |  34  | 1000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0110 |
+|  4 |  20  | 0111 |
+|  5 |  55  | 0001 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |  45  | 1000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |  99  | 1000 |
+| 15 |      | 0000 |
+| 16 |  33  | 1000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 22
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |  34  | 1000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0110 |
+|  4 |  20  | 0111 |
+|  5 |  55  | 0101 |
+|  6 |  22  | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |  45  | 1000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |  99  | 1000 |
+| 15 |      | 0000 |
+| 16 |  33  | 1000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1 
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 36
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 20
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+Enter positive integer value to search for in Hopscotch Hash Table: 19
+19found at position2.
+Error3: Unable to find 19 in Hash Table: Not Found
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 36
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1 
+
+Enter positive integer value to insert into Hopscotch Hash Table: 20
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+Enter positive integer value to search for in Hopscotch Hash Table: 19
+19found at position2.
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+Enter positive integer value to search for in Hopscotch Hash Table: 36
+36found at position3.
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+Enter positive integer value to search for in Hopscotch Hash Table: 45
+Error3: Unable to find 45 in Hash Table: Not Found
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+main.cpp:65:30: error: expected ';' after expression
+                    hop = 'e'
+                             ^
+                             ;
+1 error generated.
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform: 1 36
+
+Enter positive integer value to insert into Hopscotch Hash Table: HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0000 |
+|  4 |      | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 20
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:
+4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+Enter positive integer value to delete from Hopscotch Hash Table: 36
+36 deleted from position 3.
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1000 |
+|  3 |      | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 36
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+Enter positive integer value to delete from Hopscotch Hash Table: 19
+19 deleted from position 2.
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |      | 1100 |
+|  3 |  36  | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+Enter positive integer value to delete from Hopscotch Hash Table: 36
+36 deleted from position 3.
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |      | 1000 |
+|  3 |      | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+Enter positive integer value to delete from Hopscotch Hash Table: 20
+20 deleted from position 4.
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |      | 1000 |
+|  3 |      | 0000 |
+|  4 |      | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+Enter positive integer value to delete from Hopscotch Hash Table: 45
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |      | 1000 |
+|  3 |      | 0000 |
+|  4 |      | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ pico README
+Travis-Macbook:3110pg2 travisallan$ ls
+Hash		HashHeader.cpp	README		main.cpp
+HashBash.sh	HashHeader.h	a.out
+Travis-Macbook:3110pg2 travisallan$ pico Hash
+Travis-Macbook:3110pg2 travisallan$ pico README
+Travis-Macbook:3110pg2 travisallan$ source HashBash.sh
+Name: Travis Allan
+Date: 11/11/2014
+Course: CSCE 3110
+Assignment: Program 2
+Compiling...
+Compiling completed.
+ 
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 19
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1000 |
+|  3 |      | 0000 |
+|  4 |      | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 36
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:1
+
+Enter positive integer value to insert into Hopscotch Hash Table: 20
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1100 |
+|  3 |  36  | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+Enter positive integer value to delete from Hopscotch Hash Table: 14
+Error3: Unable to delete 14 from Hash Table: Not Found
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:2
+
+Enter positive integer value to delete from Hopscotch Hash Table: 36
+36 deleted from position 3.
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1000 |
+|  3 |      | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+Enter positive integer value to search for in Hopscotch Hash Table: 36
+Error3: Unable to find 36 in Hash Table: Not Found
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:3
+
+Enter positive integer value to search for in Hopscotch Hash Table: 20
+20 found at position 4.
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:4
+
++------------------+
+|  # | item |  hop |
++------------------+
+|  0 |      | 0000 |
+|  1 |      | 0000 |
+|  2 |  19  | 1000 |
+|  3 |      | 0100 |
+|  4 |  20  | 0000 |
+|  5 |      | 0000 |
+|  6 |      | 0000 |
+|  7 |      | 0000 |
+|  8 |      | 0000 |
+|  9 |      | 0000 |
+| 10 |      | 0000 |
+| 11 |      | 0000 |
+| 12 |      | 0000 |
+| 13 |      | 0000 |
+| 14 |      | 0000 |
+| 15 |      | 0000 |
+| 16 |      | 0000 |
++------------------+
+
+HOPSCOTCH HASHING MENU:
+1. Insert Value
+2. Delete Value
+3. Search Value
+4. Output Table
+5. Exit Program
+Enter Operation to perform:5
+
+Travis-Macbook:3110pg2 travisallan$ 

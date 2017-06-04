@@ -1,0 +1,4 @@
+read adam
+read adam aobj 50
+read tim sobj
+read sara tobj

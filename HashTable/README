@@ -1,0 +1,19 @@
+/*
+ *Name: Travis Allan
+ *Date: 11/11/2014
+ *Course: CSCE 3110
+ *Assignment: Program 2
+ */
+
+I have included a bash script(mostly for practice) to compile the program.
+The program is written completely in c++, the bash file is just there for your convenience.
+To compile all that you need to do is:
+	1. Make sure that you are in the directory that holds these files.
+	2. enter: source HashBash.sh
+	3. Wait for the program to compile.
+
+Everything else is included in the program's menu. 
+
+The file named “Program Build Log” shows the terminal’s read out from the start of the project to the end, where it is completed and running correctly.
+
+Thanks, have a nice day!
